@@ -88,13 +88,13 @@ function banditsStart(bandits)
                     end
                     npcs = {}
                     inRobbery = false
-                    exports.pNotify:SendNotification({title="Přepadení",text="Parchanti.. Už nezůstal ani jeden!",timeout=5000, type="info"})
+	            exports['qbr-core']:Notify(9, 'All the bandits are down.', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                     break
                 end
             end
         end
     end)
-    exports.pNotify:SendNotification({title="Přepadení",text="Byl si přepaden!",timeout=5000, type="info"})
+    exports['qbr-core']:Notify(9, 'You were ambushed!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
 end
 
 
@@ -126,7 +126,7 @@ Citizen.CreateThread(function()
         if inRobbery == true then
             local runAway = false
             if IsPedDeadOrDying(PlayerPedId(),true) then
-                exports.pNotify:SendNotification({title="Přepadení",text="Byl si okraden!",timeout=5000, type="info"})
+                exports['qbr-core']:Notify(9, 'You ve been robbed.', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
                 for v,k in pairs(npcs) do
                     DeleteEntity(k)
                 end
@@ -149,7 +149,7 @@ Citizen.CreateThread(function()
                 end
                 npcs = {}
                 inRobbery = false
-                exports.pNotify:SendNotification({title="Přepadení",text="Asi se ti povedlo útéct před bandity!",timeout=5000, type="info"})
+		exports['qbr-core']:Notify(9, 'You managed to escape', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
             end
         end
     end
