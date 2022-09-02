@@ -13,6 +13,7 @@ You can be robbed by NPC bandits
 # Instalation
 
 add pls_npc_bandits to your resource folder
+
 ensure pls_npc_bandits
 
 # Easy config
