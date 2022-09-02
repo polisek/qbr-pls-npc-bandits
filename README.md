@@ -21,13 +21,11 @@ ensure pls_npc_bandits
 
 # Preview
 
-https://youtu.be/Q_eJLGmCg7k
+[https://youtu.be/Q_eJLGmCg7k](https://www.youtube.com/watch?v=Q_eJLGmCg7k&ab_channel=Pol%C3%ADsek-scripts )
 
 
 
 # Support
 discord : https://discord.gg/VvRGG6rPCc
-
 email : polismanovicp@gmail.com
-
 support: https://paypal.me/Polisek?country.x=CZ&locale.x=cs_CZ
