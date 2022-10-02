@@ -88,13 +88,13 @@ function banditsStart(bandits)
                     end
                     npcs = {}
                     inRobbery = false
-                TriggerEvent('vorp:ShowBasicTopNotification', "All the bandits are down.", 5000)
-                break
+                    exports.pNotify:SendNotification({title="Přepadení",text="Parchanti.. Už nezůstal ani jeden!",timeout=5000, type="info"})
+                    break
                 end
             end
         end
     end)
-    TriggerEvent('vorp:ShowBasicTopNotification', "You were ambushed!", 5000)
+    exports.pNotify:SendNotification({title="Přepadení",text="Byl si přepaden!",timeout=5000, type="info"})
 end
 
 
@@ -126,7 +126,7 @@ Citizen.CreateThread(function()
         if inRobbery == true then
             local runAway = false
             if IsPedDeadOrDying(PlayerPedId(),true) then
-                TriggerEvent('vorp:ShowBasicTopNotification', "You ve been robbed.", 5000)
+                exports.pNotify:SendNotification({title="Přepadení",text="Byl si okraden!",timeout=5000, type="info"})
                 for v,k in pairs(npcs) do
                     DeleteEntity(k)
                 end
@@ -149,7 +149,7 @@ Citizen.CreateThread(function()
                 end
                 npcs = {}
                 inRobbery = false
-                TriggerEvent('vorp:ShowBasicTopNotification', "You managed to escape.", 5000)
+                exports.pNotify:SendNotification({title="Přepadení",text="Asi se ti povedlo útéct před bandity!",timeout=5000, type="info"})
             end
         end
     end
