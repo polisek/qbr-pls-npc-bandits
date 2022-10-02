@@ -88,13 +88,13 @@ function banditsStart(bandits)
                     end
                     npcs = {}
                     inRobbery = false
-	            exports['qbr-core']:Notify(9, 'All the bandits are down.', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
-                    break
+                TriggerEvent('vorp:ShowBasicTopNotification', "All the bandits are down.", 5000)
+                break
                 end
             end
         end
     end)
-    exports['qbr-core']:Notify(9, 'You were ambushed!', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
+    TriggerEvent('vorp:ShowBasicTopNotification', "You were ambushed!", 5000)
 end
 
 
@@ -126,7 +126,7 @@ Citizen.CreateThread(function()
         if inRobbery == true then
             local runAway = false
             if IsPedDeadOrDying(PlayerPedId(),true) then
-                exports['qbr-core']:Notify(9, 'You ve been robbed.', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
+                TriggerEvent('vorp:ShowBasicTopNotification', "You ve been robbed.", 5000)
                 for v,k in pairs(npcs) do
                     DeleteEntity(k)
                 end
@@ -149,7 +149,7 @@ Citizen.CreateThread(function()
                 end
                 npcs = {}
                 inRobbery = false
-		exports['qbr-core']:Notify(9, 'You managed to escape', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
+                TriggerEvent('vorp:ShowBasicTopNotification', "You managed to escape.", 5000)
             end
         end
     end
