@@ -1,23 +1,32 @@
-# RexshackGaming
-- discord : https://discord.gg/s5uSk56B65
-- youtube : https://www.youtube.com/channel/UCikEgGfXO-HCPxV5rYHEVbA
-- github : https://github.com/RexShack
-- support-me : https://rexshackgaming.tebex.io/package/5114907
+# QBR NPC Bandits by Polísek
 
-# Framework QBCore RedM Edition
-- https://github.com/qbcore-redm-framework
+You can be robbed by NPC bandits
 
-# Dependancies
-- qbr-core : https://github.com/qbcore-redm-framework
-- qbr-menu : https://github.com/qbcore-redm-framework/qbr-menu
 
-# Installation
-- ensure that the dependancies are added and started
-- add rsg_fishvendor to your resources folder
+3 options to end the ambush.
 
-# Starting the resource
-- add the following to your server.cfg file : ensure rsg_fishvendor
+- Shoot everyone
+- Escape
+- Die
+
+
+# Instalation
+
+add pls_npc_bandits to your resource folder
+
+ensure pls_npc_bandits
+
+# Easy config
+![image](https://user-images.githubusercontent.com/107623238/188110684-cebc56d5-5cae-4ac8-8edb-93725c41cab9.png)
+
+
+# Preview
+
+[https://youtu.be/Q_eJLGmCg7k](https://www.youtube.com/watch?v=Q_eJLGmCg7k&ab_channel=Pol%C3%ADsek-scripts )
+
+
 
 # Support
-- discord : https://discord.gg/s5uSk56B65
-- email : rexshackuk@gmail.com
+- discord : https://discord.gg/VvRGG6rPCc
+- email : polismanovicp@gmail.com
+- support: https://paypal.me/Polisek?country.x=CZ&locale.x=cs_CZ
