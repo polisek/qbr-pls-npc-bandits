@@ -119,7 +119,11 @@ Citizen.CreateThread(function()
                         canBeRob = false
                         canBeRobTime = Config.nonRobTime
                     end
-                end
+                elseif dis < 100.0 then
+		  	Wait(1000)
+		else
+			Wait(7000)			
+		end
             end
         end
 
@@ -158,7 +162,7 @@ end)
 
 Citizen.CreateThread(function()
 	while true do
-		Citizen.Wait(Config.nonRobTime*1000)
+	Citizen.Wait(Config.nonRobTime*1000)
         if canBeRob == false then
             if canBeRobTime == 0 then
                 canBeRob = true
