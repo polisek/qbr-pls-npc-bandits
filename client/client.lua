@@ -122,7 +122,7 @@ Citizen.CreateThread(function()
                 elseif dis < 100.0 then
 		  	Wait(1000)
 		else
-			Wait(7000)			
+			Wait(8000)			
 		end
             end
         end
